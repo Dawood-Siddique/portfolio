@@ -208,3 +208,34 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+export const technologies = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    desc: "React, Next.js, TypeScript, Tailwind CSS for modern, responsive web applications.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Mobile Development",
+    desc: "Native iOS and Android development with Swift, Kotlin, and cross-platform solutions.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Backend & Database",
+    desc: "Django, Python, REST APIs, GraphQL, PostgreSQL, and scalable backend architecture.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "AI & Automation",
+    desc: "n8n, Langchain, Langgraph, PyTorch for intelligent automation and AI solutions.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
