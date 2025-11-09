@@ -34,6 +34,7 @@ export const PinContainer = ({
         "relative group/pin z-50  cursor-pointer",
         containerClassName
       )}
+      onClick={() => href && window.open(href, "_blank")}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
