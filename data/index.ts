@@ -1,7 +1,7 @@
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "We prioritize client collaboration, fostering open communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -11,7 +11,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "We're flexible with time zones and global collaboration",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -21,8 +21,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Our tech stack",
+    description: "iOS, React, Next.js, Django, AI/ML",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -31,7 +31,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "AI-first approach with modern frameworks",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -42,8 +42,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently developing AI automation solutions",
+    description: "Using n8n, Langchain, and modern AI frameworks",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -52,7 +52,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Ready to start your project?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -100,33 +100,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "CodingDevs delivered an exceptional iOS application that exceeded our expectations. Their expertise in mobile development and attention to detail made the entire process seamless. The team's professionalism and technical skills are truly outstanding.",
+    name: "Sarah Chen",
+    title: "CEO, TechFlow Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with CodingDevs on our React/Next.js website was a game-changer. They transformed our vision into a modern, responsive platform that our customers love. Their backend integration with Django was flawless and the project was delivered on time.",
+    name: "David Rodriguez",
+    title: "CTO, InnovateCorp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The AI automation system built by CodingDevs using n8n and Langchain has revolutionized our workflow. Their expertise in AI frameworks like PyTorch and their ability to create intelligent solutions is remarkable. Highly recommend their services.",
+    name: "Emily Watson",
+    title: "Operations Director, AutoFlow Inc",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "CodingDevs provided end-to-end development for our full-stack application. From the React frontend to Django backend API, everything works perfectly. Their understanding of modern development practices and clean code standards is impressive.",
+    name: "James Park",
+    title: "Founder, StartupHub",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The team's expertise in both web development and AI integration is exceptional. CodingDevs created a sophisticated platform that combines beautiful UI with powerful backend AI capabilities. Truly professional and reliable development partner.",
+    name: "Lisa Anderson",
+    title: "Product Manager, VisionTech",
   },
 ];
 
@@ -166,29 +166,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full-Stack Development Team",
+    desc: "Expert development in React, Next.js, and Django, delivering scalable web applications with modern architecture.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "iOS & Android Development",
+    desc: "Native iOS app development and cross-platform mobile solutions using modern frameworks and best practices.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "AI & Automation Solutions",
+    desc: "Building intelligent automation systems using n8n, Langchain, Langgraph, and PyTorch for business process optimization.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Enterprise Development Partner",
+    desc: "Delivering end-to-end solutions from concept to deployment, specializing in modern web technologies and AI integration.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
