@@ -61,9 +61,9 @@ const Hero = () => {
               Welcome to CodingDevs - Crafting iOS apps, React/Next.js websites, Django backends, and AI-powered solutions.
             </p>
 
-            <a href="#about">
+            <a href="#contact">
               <MagicButton
-                title="Explore our work"
+                title="Let's get in touch"
                 icon={<FaLocationArrow />}
                 position="right"
               />
