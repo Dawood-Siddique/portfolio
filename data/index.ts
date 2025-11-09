@@ -209,6 +209,51 @@ export const socialMedia = [
   },
 ];
 
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Alex Johnson",
+    experience: "5+ years",
+    technologies: ["React", "TypeScript", "Next.js", "Node.js"],
+    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    id: 2,
+    name: "Sarah Chen",
+    experience: "7+ years",
+    technologies: ["Python", "Django", "PostgreSQL", "AWS"],
+    img: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    id: 3,
+    name: "Michael Rodriguez",
+    experience: "6+ years",
+    technologies: ["Swift", "iOS", "Kotlin", "React Native"],
+    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    id: 4,
+    name: "Emily Watson",
+    experience: "8+ years",
+    technologies: ["AI/ML", "PyTorch", "Langchain", "n8n"],
+    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    id: 5,
+    name: "David Park",
+    experience: "4+ years",
+    technologies: ["Vue.js", "Nuxt.js", "GraphQL", "MongoDB"],
+    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    id: 6,
+    name: "Lisa Anderson",
+    experience: "6+ years",
+    technologies: ["DevOps", "Docker", "Kubernetes", "CI/CD"],
+    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+  },
+];
+
 export const technologies = [
   {
     id: 1,
