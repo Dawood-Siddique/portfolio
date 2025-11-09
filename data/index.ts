@@ -222,7 +222,7 @@ export const teamMembers = [
     name: "Sarah Chen",
     experience: "7+ years",
     technologies: ["Python", "Django", "PostgreSQL", "AWS"],
-    img: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
   },
   {
     id: 3,

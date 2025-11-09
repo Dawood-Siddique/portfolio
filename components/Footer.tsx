@@ -1,5 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
@@ -18,6 +18,11 @@ const Footer: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitStatus, setSubmitStatus] = useState<string>("");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     const { name, value } = e.target;
@@ -27,37 +32,44 @@ const Footer: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus("");
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus("");
 
-    try {
-      const response = await fetch("https://formspree.io/f/mblqrwao", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _replyto: formData.email,
-        }),
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/mblqrwao", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        _replyto: formData.email,
+      }),
+    });
 
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch (error) {
+    if (response.ok) {
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
       setSubmitStatus("error");
     }
+  } catch (error) {
+    setSubmitStatus("error");
+  }
 
-    setIsSubmitting(false);
-  };
+  setIsSubmitting(false);
+};
+
+const handleMagicButtonClick = () => {
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  if (form) {
+    form.requestSubmit();
+  }
+};
 
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
@@ -80,7 +92,7 @@ const Footer: React.FC = () => {
           achieve your goals.
         </p>
         
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
+        <form onSubmit={handleSubmit} id="contact-form" className="flex flex-col gap-4 w-full max-w-md">
           <input
             type="text"
             name="name"
@@ -108,29 +120,26 @@ const Footer: React.FC = () => {
             rows={4}
             className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
           />
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="mt-4"
-          >
-            <MagicButton
-              title={isSubmitting ? "Sending..." : "Let's get in touch"}
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </button>
           
-          {submitStatus === "success" && (
+          <MagicButton
+            title={isSubmitting && isClient ? "Sending..." : "Let's get in touch"}
+            icon={<FaLocationArrow />}
+            position="right"
+            handleClick={isSubmitting ? undefined : handleMagicButtonClick}
+            otherClasses="cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          />
+          
+          {submitStatus === "success" && isClient && (
             <p className="text-green-400 text-center">Message sent successfully!</p>
           )}
-          {submitStatus === "error" && (
+          {submitStatus === "error" && isClient && (
             <p className="text-red-400 text-center">Failed to send message. Please try again.</p>
           )}
         </form>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
+          Copyright © 2025 CodingDevs
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
