@@ -100,33 +100,38 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "CodingDevs delivered an exceptional iOS application that exceeded our expectations. Their expertise in mobile development and attention to detail made the entire process seamless. The team's professionalism and technical skills are truly outstanding.",
-    name: "Sarah Chen",
-    title: "CEO, TechFlow Solutions",
+      "Working with this team was a breath of fresh air. They automated our entire lead-generation workflow and cut our manual work by more than half. Super professional, quick responses, and delivered exactly what we needed. Highly recommended!",
+    name: "Emily Harper",
+    title: "CEO, BrightEdge Solutions",
+    img: "/c1.jpg",
   },
   {
     quote:
       "Working with CodingDevs on our React/Next.js website was a game-changer. They transformed our vision into a modern, responsive platform that our customers love. Their backend integration with Django was flawless and the project was delivered on time.",
-    name: "David Rodriguez",
-    title: "CTO, InnovateCorp",
+    name: "Michael Turner",
+    title: "CTO, Nimbus Tech Labs",
+    img: "/c2.jpeg",
   },
   {
     quote:
       "The AI automation system built by CodingDevs using n8n and Langchain has revolutionized our workflow. Their expertise in AI frameworks like PyTorch and their ability to create intelligent solutions is remarkable. Highly recommend their services.",
-    name: "Emily Watson",
-    title: "Operations Director, AutoFlow Inc",
+    name: "Daniel Brooks",
+    title: "Operations Director, UrbanHive Digital",
+    img: "/c3.jpg",
   },
   {
     quote:
       "CodingDevs provided end-to-end development for our full-stack application. From the React frontend to Django backend API, everything works perfectly. Their understanding of modern development practices and clean code standards is impressive.",
-    name: "James Park",
-    title: "Founder, StartupHub",
+    name: "Jason Mitchell",
+    title: "Founder, BluePeak Innovations",
+    img: "/c4.jpeg",
   },
   {
     quote:
       "The team's expertise in both web development and AI integration is exceptional. CodingDevs created a sophisticated platform that combines beautiful UI with powerful backend AI capabilities. Truly professional and reliable development partner.",
-    name: "Lisa Anderson",
-    title: "Product Manager, VisionTech",
+    name: "Sarah Collins",
+    title: "Product Manager, NovaCore Systems",
+    img: "/c5.jpeg",
   },
 ];
 
