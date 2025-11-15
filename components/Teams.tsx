@@ -4,24 +4,25 @@ import { teamMembers } from "@/data";
 
 const Teams = () => {
   return (
-    <div className="py-20">
+    <div className="py-12">
       <h1 className="heading">
-        Meet our{" "}
-        <span className="text-[#CBACF9]">development team</span>
+        Meet our <span className="text-[#CBACF9]">development team</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-8 mt-10">
         {teamMembers.map((member) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={member.id}
           >
-            <div className="relative w-full h-full overflow-hidden lg:rounded-3xl border border-white/[.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4"
-                 style={{
-                   background: "rgb(4,7,29)",
-                   backgroundColor:
-                     "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-                 }}>
-              <div className="w-full h-full flex flex-col items-center justify-center p-8 space-y-6">
+            <div
+              className="relative w-full h-full overflow-hidden lg:rounded-3xl border border-white/[.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4"
+              style={{
+                background: "rgb(4,7,29)",
+                backgroundColor:
+                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              }}
+            >
+              <div className="w-full h-full flex flex-col items-center justify-center p-8 space-y-4">
                 {/* Developer Picture */}
                 <div className="relative">
                   <img
@@ -30,7 +31,7 @@ const Teams = () => {
                     className="w-24 h-24 lg:w-32 lg:h-32 rounded-full object-cover border-2 border-white/[.2] group-hover/bento:border-white/[.4] transition duration-200"
                   />
                 </div>
-                
+
                 {/* Name and Experience */}
                 <div className="text-center space-y-2">
                   <h2 className="font-bold lg:text-2xl md:text-xl text-base text-white">
@@ -40,7 +41,7 @@ const Teams = () => {
                     {member.experience} Experience
                   </p>
                 </div>
-                
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 justify-center max-w-xs">
                   {member.technologies.map((tech, index) => (
